@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="js/push.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <script>document.write('<base href="' + document.location + '" />');</script>
+	<script src="lib/angular.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<!-- Angular Material style sheet -->
+	<link rel="stylesheet" href="css/angular-material.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Angular Material requires Angular.js Libraries -->
+  	<script src="lib/angular.min.js"></script>
+  	<script src="lib/angular-animate.min.js"></script>
+  	<script src="lib/angular-aria.min.js"></script>
+  	<script src="lib/angular-messages.min.js"></script>
+  	<!-- Angular Material Library -->
+  	<script src="lib/angular-material.min.js"></script>		
+	<script src="js/app.js"></script>
+	<script src="js/loginController.js"></script>	
+	<script src="lib/moment.js"></script>	
+	<script src="js/loginService.js"></script>
+	<script src="lib/dirPagination.js"></script>
+		
+</head>
+<body>
+<script>
+
+      Push.create("Bienvenido a", {
+	  body:"Systems with Mexican Ingenuity",
+	  icon:"img/icono.jpg",
+	  timeout:4000,
+	  onClick: function(){
+		window.focus();
+		this.close();	
+	}
+});
+      
+</script>
+
+<div class="container" style="background-color:#f9f9f9;">
+			<div >
+				<div class="row" style="background-color:#ffffff;">						
+					<div class="col-md-12" style="font-size: 30px;background-color:#7A1EA1;color: white;height: 65px;padding-top: 12px;font-family:Arial;">Login Page</div>					
+				</div>
+			</div>
+			<div ui-view style="margin-top:20px;"></div>
+		</div>
+
+</body>
+</html>
